@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/ic_home"
+            android:icon="@drawable/icon_home"
+            android:title="@string/main_home"
+
+    />
+
+    <item
+            android:id="@+id/ic_addCar"
+            android:title="@string/main_addCar"
+            android:icon="@drawable/icon_add_car"/>
+
+    <item
+            android:id="@+id/ic_profile"
+            android:title="@string/main_profile"
+            android:icon="@drawable/icon_profile"/>
+
+
+
+</menu>

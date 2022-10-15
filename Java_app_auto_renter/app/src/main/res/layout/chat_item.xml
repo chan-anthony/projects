@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:id="@+id/ConstraintLayoutChatItem">
+
+    <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp" app:srcCompat="@drawable/unknown_person" android:id="@+id/chat_user_icon"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" android:layout_marginStart="20dp"/>
+    <TextView
+            android:text="User name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/chat_item_user_name"
+            app:layout_constraintTop_toTopOf="@id/chat_user_icon"
+            app:layout_constraintStart_toEndOf="@id/chat_user_icon" android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp" android:fontFamily="@font/poppins_bold" android:textColor="#000000"
+            android:textSize="16sp"/>
+    <TextView
+            android:text="Car name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Chat_item_carName"
+            app:layout_constraintStart_toStartOf="@+id/chat_item_user_name"
+            android:fontFamily="@font/poppins_light" app:layout_constraintBottom_toBottomOf="@+id/chat_user_icon"
+            android:layout_marginBottom="5dp"/>
+    <TextView
+            android:text="22/11/2021"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Chat_item_date"
+            app:layout_constraintTop_toTopOf="@+id/chat_item_user_name" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="30dp" android:layout_marginTop="5dp" android:fontFamily="@font/poppins"
+            android:textColor="#000000"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

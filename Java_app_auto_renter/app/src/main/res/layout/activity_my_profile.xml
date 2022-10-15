@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MyProfileActivity">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/profile_top"/>
+
+    <ImageButton
+            android:src="@drawable/profile_setting_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/myProfileSettingBtn"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="80dp" android:layout_marginEnd="30dp"/>
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="left"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="60dp"
+            android:layout_marginStart="30dp" android:layout_marginEnd="30dp">
+
+        <TableRow android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageButton
+                        android:layout_width="108dp"
+                        android:layout_height="108dp" android:id="@+id/myProfileIcon"
+                        android:src="@drawable/unknown_person"
+                        android:background="@color/transparent"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="8dp"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:gravity="center|left">
+                    <TextView
+                            android:text="Derek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/myProfileUsrName"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"/>
+                    <TextView
+                            android:text="@string/my_profile_user_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/myProfileID"
+                            android:textSize="14sp" android:textColor="#AFAFAF"/>
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                            android:text="@string/my_profile_list_number"
+                            android:layout_width="108dp"
+                            android:layout_height="wrap_content" android:id="@+id/myProfileListNo"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"/>
+                    <TextView
+                            android:text="@string/my_profile_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/myProfileList"
+                            android:layout_weight="1"
+                            android:gravity="center" android:textColor="#FFFFFF" android:textSize="14sp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <ImageView
+                                android:src="@drawable/profile_star_empty"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/myProfileStar1"/>
+                        <ImageView
+                                android:src="@drawable/profile_star_empty"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" android:id="@+id/myProfileStar2"
+                                android:layout_marginStart="4dp"/>
+                        <ImageView
+                                android:src="@drawable/profile_star_empty"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" android:id="@+id/myProfileStar3"
+                                android:layout_marginStart="4dp"/>
+                        <ImageView
+                                android:src="@drawable/profile_star_empty"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" android:id="@+id/myProfileStar4"
+                                android:layout_marginStart="4dp"/>
+                        <ImageView
+                                android:src="@drawable/profile_star_empty"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" android:id="@+id/myProfileStar5"
+                                android:layout_marginStart="4dp" android:layout_weight="1"/>
+                        <TextView
+                                android:text="@string/my_profile_rate_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/myProfileRateNo"
+                                android:layout_marginLeft="4dp" android:textSize="14sp" android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="@string/my_profile_join_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/myProfileJoinDate"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="#FFFFFF"
+                                android:layout_marginTop="8dp"
+                                android:textSize="10sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tabs">
+
+        <!--<com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_profile_tab1"
+                />
+
+                <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_profile_tab2"
+                />
+                <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_profile_tab3"
+                />-->
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:menu="@menu/menu_bottom_nav_bar"
+            android:background="@drawable/main_bottom_bar"
+
+            android:id="@+id/bottomNavViewBar">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/tabs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavViewBar"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

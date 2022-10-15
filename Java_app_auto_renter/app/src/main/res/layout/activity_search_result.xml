@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SearchResultActivity" android:background="@drawable/top_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavViewBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filterBtnHolder">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/SearchCardsGridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:columnCount="2"
+            app:orientation="horizontal"
+            tools:layout_editor_absoluteX="407dp">
+
+
+        </androidx.gridlayout.widget.GridLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:menu="@menu/menu_bottom_nav_bar"
+            android:background="@drawable/main_bottom_bar"
+
+            android:id="@+id/bottomNavViewBar"
+            app:layout_constraintBottom_toBottomOf="parent">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/filterBtnHolder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/SearchResultTopBar">
+        <ImageButton
+                android:layout_width="68dp"
+                android:layout_height="27dp" app:srcCompat="@drawable/button_filter"
+                android:id="@+id/FilterButton" android:scaleType="centerInside" android:background="#00FFFFFF"
+                android:layout_marginLeft="20dp"
+                android:onClick="openSearchFilter"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/SearchResultTopBar"
+            app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ReturnButton"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:scaleType="centerInside"
+                android:background="@drawable/icon_return"
+                android:layout_marginTop="25dp" android:backgroundTint="#FFFFFF" android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+
+        <SearchView
+            android:id="@+id/MainSearchBarResult"
+            android:layout_width="266dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/main_search_bar"
+
+            android:iconifiedByDefault="false"></SearchView>
+        <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/MainMessage"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:scaleType="centerInside"
+                android:background="@drawable/icon_chat"
+                android:layout_marginTop="25dp" android:backgroundTint="#FFFFFF" android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="openChatActivity"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

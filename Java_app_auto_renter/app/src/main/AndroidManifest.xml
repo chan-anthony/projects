@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.autorenter">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+            android:name="android.hardware.camera.any"
+            android:required="true"/>
+    <uses-feature
+            android:name="android.hardware.camera.autofocus"
+            android:required="false"/>
+
+    <application
+            android:name=".GlobalVariable"
+            android:allowBackup="true"
+            android:icon="@drawable/logo2"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AutoRenter"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".AddReviewActivity">
+        </activity>
+        <activity
+                android:name=".OthersProfileActivity"
+                android:label="@string/title_activity_others_profile"
+                android:theme="@style/Theme.AutoRenter.NoActionBar">
+        </activity>
+        <activity android:name=".SettingActivity">
+        </activity>
+        <activity android:name=".SearchFilter">
+        </activity>
+        <activity android:name=".ChatConversationActivity">
+        </activity>
+        <activity android:name=".ChatActivity">
+        </activity>
+        <activity android:name=".itemListingActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity
+                android:name=".MyProfileActivity"
+                android:label="@string/title_activity_my_profile"
+                android:theme="@style/Theme.AutoRenter.NoActionBar">
+        </activity>
+        <activity android:name=".AddCarActivity">
+        </activity>
+        <activity android:name=".CreateAccountActivity">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchResultActivity">
+        </activity>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="com.example.android.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddCarActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/addCar_title" android:layout_above="@id/bottom_pad">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp"
+                          android:paddingBottom="20dp">
+                <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                    >
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto0" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"
+                                android:layout_marginHorizontal="10dp"/>
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto1" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"/>
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto2" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"/>
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto3" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"/>
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto4" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"/>
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto5" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"/>
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto6" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"/>
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto7" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"/>
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto8" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"/>
+                        <ImageButton
+                                android:layout_width="220dp"
+                                android:layout_height="150dp" app:srcCompat="@drawable/btn_addphoto"
+                                android:id="@+id/addPhoto9" android:backgroundTint="#FFFFFF" android:tag="noPhoto"
+                                android:scaleType="centerCrop"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <TextView
+                        android:text="Required Field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textLable_required"
+                        android:textSize="14sp" android:fontFamily="@font/poppins_medium"
+                        android:textColor="#000000" android:layout_marginBottom="-15dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Price (HKD)"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_price_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:inputType="numberDecimal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Brand"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000"><![CDATA[
+                    >
+
+                    ]]>
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins" android:id="@+id/input_brand_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Model"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins" android:id="@+id/input_model_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/Max_duration_of_rent"
+                            android:layout_width="190dp"
+                            android:layout_height="match_parent"
+                            android:hint="Max duration of rent"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins" android:inputType="number"
+                                android:id="@+id/Max_duration_of_rent_text"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/input_duration_unit_drop"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Unit"
+                            app:boxStrokeColor="#000000" app:hintTextColor="#000000"
+                            android:layout_marginStart="15dp">
+
+                        <AutoCompleteTextView
+                                android:id="@+id/input_duration_unit_items"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="none"
+                        />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Location"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins" android:id="@+id/input_location_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_available_drop"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Current rental status "
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <AutoCompleteTextView
+                            android:id="@+id/input_available_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                    />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                        android:text="Optional Field (below)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textLable_optional"
+                        android:textSize="14sp" android:fontFamily="@font/poppins_medium"
+                        android:textColor="#000000" android:layout_marginTop="20dp"
+                        android:layout_marginBottom="-15dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Description"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="106dp"
+                            android:fontFamily="@font/poppins" android:minHeight="100dp"
+                            android:id="@+id/input_description_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Color"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins" android:id="@+id/input_color_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_numOfSeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Number Of Seats"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins" android:inputType="number"
+                            android:id="@+id/input_numOfSeat_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_typeOfGas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Type Of Gas"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins" android:id="@+id/input_typeOfGas_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_typeOfVehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Type Of Vehicle"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins" android:id="@+id/input_typeOfVehicle_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_vehicleMileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Vehicle millage (km)"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins" android:inputType="numberDecimal"
+                            android:id="@+id/input_vehicleMileage_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/input_ageOfVehicle"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:hint="Age Of Vehicle"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins" android:inputType="number"
+                                android:id="@+id/input_ageOfVehicle_text"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/input_age_unit_drop"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Unit"
+                            app:boxStrokeColor="#000000" app:hintTextColor="#000000"
+                            android:layout_marginStart="15dp">
+
+                        <AutoCompleteTextView
+                                android:id="@+id/input_age_unit_items"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="none"
+                        />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_trans_drop"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Transmission"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <AutoCompleteTextView
+                            android:id="@+id/input_trans_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                    />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_displacementOfEngine"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Displacement Of Engine (cc)"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="15dp" app:boxStrokeColor="#000000" app:hintTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins" android:inputType="number"
+                            android:id="@+id/input_displacementOfEngine_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+                android:text="Post Your Vehicles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/addCar_title"
+                android:fontFamily="@font/poppins_bold" android:textColor="#000000"
+                android:layout_marginStart="20dp" android:layout_marginTop="10dp" android:textSize="20sp"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" android:id="@+id/bottom_pad"
+                android:layout_alignParentBottom="true" android:elevation="10dp"/>
+        <Button
+                android:text="Post"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content" android:id="@+id/btn_post"
+                android:layout_alignBottom="@id/bottom_pad" android:layout_alignEnd="@id/bottom_pad"
+                android:layout_marginRight="15dp" android:fontFamily="@font/poppins_semibold" android:textSize="18sp"
+                android:backgroundTint="#847CF2"/>
+        <Button
+                android:text="Cancel"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content" android:id="@+id/btn_cancel"
+                android:layout_alignBottom="@id/bottom_pad"
+                android:layout_alignStart="@id/bottom_pad" android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_semibold" android:textSize="18sp" android:backgroundTint="#F58C8D"
+                android:textAllCaps="false"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
